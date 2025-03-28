@@ -22,7 +22,7 @@ export default function Comments({ comments: initialComments, postId }) {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:5000/comment', {
+      const response = await fetch('https://blog-mern-backend-iwd4.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
