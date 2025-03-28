@@ -10,7 +10,7 @@ export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function logout() {
-    axios.post('http://localhost:5000/logout');
+    axios.post('https://blog-mern-backend-iwd4.onrender.com');
     setUserInfo(null);
     setIsMenuOpen(false);
   }
