@@ -11,7 +11,7 @@ export default function Post({_id,title,summary,cover,content,createdAt,author})
     <div className="post">
       <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={`http://localhost:5000/uploads/${filename}`} alt="" onError={(e) => console.error('Image failed to load:', e.target.src)}/>
+          <img src={`https://blog-mern-backend-iwd4.onrender.com${filename}`} alt="" onError={(e) => console.error('Image failed to load:', e.target.src)}/>
         </Link>
       </div>
       <div className="texts">
