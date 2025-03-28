@@ -10,7 +10,7 @@ export default function PostPage() {
   const {userInfo} = useContext(UserContext);
   const {id} = useParams();
   useEffect(() => {
-    fetch(`http://localhost:5000/post/${id}`)
+    fetch(`https://blog-mern-backend-iwd4.onrender.com${id}`)
       .then(response => {
         response.json().then(postInfo => {
           console.log('PostPage cover path:', postInfo.cover);
