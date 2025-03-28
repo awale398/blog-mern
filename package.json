@@ -12,7 +12,7 @@
   },
  "scripts": {
   "start": "node index.js",
-  "dev": "vite",
+  "dev": "start",
   "build": "vite build"
 }
 
